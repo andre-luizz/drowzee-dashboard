@@ -1,9 +1,13 @@
 import React from 'react';
-import './App.css';
+import Heading from './components/Heading';
+import GlobalStyles from './styles/GlobalStyles';
 
 const App: React.FC = () => {
 	return (
-		<h1>teste</h1>
+		<>
+			<GlobalStyles />
+			<Heading>Create your account</Heading>
+		</>
 	);
 };
 
