@@ -2,9 +2,9 @@
 import React from 'react';
 import * as S from './styles';
 
-const Text: React.FC = ({ children }) => {
+const Text: React.FC = ({ children, ...rest }) => {
 	return (
-		<S.Container>{children}</S.Container>
+		<S.Container {...rest}>{children}</S.Container>
 	);
 };
 
