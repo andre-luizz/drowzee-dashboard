@@ -1,23 +1,22 @@
 import styled from 'styled-components';
 import TextBase from '../../components/Text';
 import colors from '../../styles/colors';
+import gradient from '../../styles/gradient';
 
 export const Container = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${colors.primary};
+    background-image: ${gradient.button};
     height: 54px;
     width: 100%;
-    min-width: 354px;
+    max-width: 354px;
     border: 0;
     border-radius: 10px;
-    transition: background-color 0.1s;
-
-    &:hover {
-        cursor: pointer;
-        background-color: ${colors.buttonHover};
-    }
+    cursor: pointer;
+    border: 0.3px solid ${colors.primary};
 `;
 
-export const Text = styled(TextBase)``;
+export const Text = styled(TextBase)`
+    font-size: 16px;
+`;
