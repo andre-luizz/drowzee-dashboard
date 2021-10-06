@@ -1,19 +1,9 @@
 import React from 'react';
-import { IconBaseProps } from 'react-icons';
-import { Path, UseFormRegister } from 'react-hook-form';
+
 import { FiEye } from 'react-icons/fi';
+import { ITextField } from '../../domain/components/interfaces/ITextField';
 
 import * as S from './styles';
-
-interface ITextField extends React.InputHTMLAttributes<HTMLInputElement> {
-  fieldName: Path<any>;
-  required?: boolean;
-  placeholder?: string;
-  register: UseFormRegister<any>;
-  icon?: React.ComponentType<IconBaseProps>;
-  errorMessage?: string;
-  secureTextField?: boolean;
-}
 
 const TextField: React.FC<ITextField> = ({
 	fieldName,

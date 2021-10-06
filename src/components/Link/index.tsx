@@ -1,9 +1,8 @@
 import React from 'react';
-import { LinkProps } from 'react-router-dom';
+
+import { ILink } from '../../domain/components/interfaces/ILink';
 
 import * as S from './styles';
-
-type ILink = LinkProps;
 
 const Link: React.FC<ILink> = ({ children, to }) => {
 	return (

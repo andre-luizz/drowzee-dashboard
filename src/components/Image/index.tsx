@@ -1,12 +1,8 @@
 import React from 'react';
-import * as S from './styles';
 
-interface IIMage {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-}
+import { IIMage } from '../../domain/components/interfaces/IImage';
+
+import * as S from './styles';
 
 const Image: React.FC<IIMage> = ({ src, alt, width, height,...rest }) => {
 	return (

@@ -1,9 +1,8 @@
 import React from 'react';
-import * as S from './styles';
 
-interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: string;
-}
+import { IButton } from '../../domain/components/interfaces/IButton';
+
+import * as S from './styles';
 
 const Button: React.FC<IButton> = ({ children, ...rest }) => {
 	return (
