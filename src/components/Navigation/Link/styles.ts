@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 import { Link as LinkBase } from 'react-router-dom';
 
-import TextBase from '../Text';
-import colors from '../../styles/colors';
+import TextBase from '../../DataDisplay/Text';
+import colors from '../../../styles/colors';
 
 export const Link = styled(LinkBase)`
     text-decoration: none;
