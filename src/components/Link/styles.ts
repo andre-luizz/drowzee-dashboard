@@ -14,6 +14,6 @@ export const Text = styled(TextBase)`
     transition: color 0.1s;
 
     &:hover {
-        color: #6493EE;
+        color: ${colors.linkHover};
     }
 `;
