@@ -1,13 +1,11 @@
 import styled, { css } from 'styled-components/macro';
+
 import colors from '../../../styles/colors';
 import fonts from '../../../styles/fonts';
 
-interface IContainerProps {
-    isFocused?: boolean;
-    errorMessage?: string;
-}
+import { IStyleContainerProps } from '../../../domain/components/interfaces/ITextField';
 
-export const Container = styled.div<IContainerProps>`
+export const Container = styled.div<IStyleContainerProps>`
     display: flex;
     justify-content: center;
     align-items: center;
