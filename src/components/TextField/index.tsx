@@ -1,6 +1,7 @@
 import React from 'react';
 import { IconBaseProps } from 'react-icons';
 import { Path, UseFormRegister } from 'react-hook-form';
+import { FiEye } from 'react-icons/fi';
 
 import * as S from './styles';
 
@@ -11,18 +12,24 @@ interface ITextField extends React.InputHTMLAttributes<HTMLInputElement> {
   register: UseFormRegister<any>;
   icon?: React.ComponentType<IconBaseProps>;
   errorMessage?: string;
+  secureTextField?: boolean;
 }
 
 const TextField: React.FC<ITextField> = ({
-	type,
 	fieldName,
 	required,
 	placeholder,
 	register,
 	icon: Icon,
 	errorMessage,
+	secureTextField,
 }) => {
+	const [passwordShow, setPasswordShow] = React.useState(false);
 	const [isFocused, setIsFocused] = React.useState(false);
+
+	const togglePasswordVisibility = () => {
+		setPasswordShow(!passwordShow);
+	};
 
 	const handleInputFocus = React.useCallback(() => {
 		setIsFocused(true);
@@ -39,10 +46,11 @@ const TextField: React.FC<ITextField> = ({
 				{Icon && <Icon size={20} />}
 				<S.TextField
 					onFocus={handleInputFocus}
-					type={type}
+					type={passwordShow ? 'text' : 'password'}
 					placeholder={placeholder}
 					{...register(fieldName, { required })}
 				/>
+				{secureTextField && <FiEye size={25} onClick={togglePasswordVisibility} /> }
 			</S.Container>
 		</>
 	);
