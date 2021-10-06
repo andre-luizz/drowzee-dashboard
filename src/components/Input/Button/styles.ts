@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import TextBase from '../../components/Text';
-import colors from '../../styles/colors';
-import gradient from '../../styles/gradient';
+import TextBase from '../../DataDisplay/Text';
+import colors from '../../../styles/colors';
+import gradient from '../../../styles/gradient';
 
 export const Container = styled.button`
     display: flex;

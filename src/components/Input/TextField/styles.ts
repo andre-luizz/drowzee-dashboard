@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components/macro';
-import colors from '../../styles/colors';
-import fonts from '../../styles/fonts';
+import colors from '../../../styles/colors';
+import fonts from '../../../styles/fonts';
 
 interface IContainerProps {
     isFocused?: boolean;
