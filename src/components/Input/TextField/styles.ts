@@ -51,6 +51,7 @@ export const TextField = styled.input`
 export const Error = styled.span`
     font-size: 14px;
     letter-spacing: 1.5px;
+    align-self: flex-start;
     font-family: ${fonts.body};
     color: red;
 `;

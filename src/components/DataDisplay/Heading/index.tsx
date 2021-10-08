@@ -1,9 +1,9 @@
 import React from 'react';
 import * as S from './styles';
 
-const Heading: React.FC = ({ children }) => {
+const Heading: React.FC = ({ children, ...rest }) => {
 	return (
-		<S.Container>{children}</S.Container>
+		<S.Container {...rest} >{children}</S.Container>
 	);
 };
 

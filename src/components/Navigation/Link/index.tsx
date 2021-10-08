@@ -4,9 +4,9 @@ import { ILink } from '../../../domain/components/interfaces/ILink';
 
 import * as S from './styles';
 
-const Link: React.FC<ILink> = ({ children, to }) => {
+const Link: React.FC<ILink> = ({ children, to, ...rest }) => {
 	return (
-		<S.Link to={to}>
+		<S.Link to={to} {...rest}>
 			<S.Text>{children}</S.Text>
 		</S.Link>
 	);
