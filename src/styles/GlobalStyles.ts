@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components/macro';
-import colors from './colors';
 
 export default createGlobalStyle`
     * {
@@ -10,7 +9,6 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: ${colors.primary};
         display: flex;
         justify-content: center;
         align-items: center;

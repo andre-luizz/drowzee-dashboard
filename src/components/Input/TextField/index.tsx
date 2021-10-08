@@ -14,7 +14,7 @@ const TextField: React.FC<ITextField> = ({
 	errorMessage,
 	secureTextField,
 }) => {
-	const [passwordShow, setPasswordShow] = React.useState(false);
+	const [passwordShow, setPasswordShow] = React.useState(secureTextField);
 	const [isFocused, setIsFocused] = React.useState(false);
 
 	const togglePasswordVisibility = () => {
@@ -36,7 +36,7 @@ const TextField: React.FC<ITextField> = ({
 				{Icon && <Icon size={20} />}
 				<S.TextField
 					onFocus={handleInputFocus}
-					type={passwordShow ? 'text' : 'password'}
+					type={passwordShow ? 'password' : 'text'}
 					placeholder={placeholder}
 					{...register(fieldName, { required })}
 				/>
