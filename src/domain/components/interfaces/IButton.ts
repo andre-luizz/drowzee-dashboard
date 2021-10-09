@@ -1,4 +1,2 @@
 
-export interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: string;
-}
+export type IButton = React.ButtonHTMLAttributes<HTMLButtonElement>

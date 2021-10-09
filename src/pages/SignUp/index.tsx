@@ -3,7 +3,7 @@ import React from 'react';
 import { FiUser, FiMail, FiLock } from 'react-icons/fi';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { ISignUpUserData } from '../../domain/pages/SignUp/ISignUpUserData';
+import { ISignUpUserData } from '../../domain/pages/SignUp/interfaces/ISignUpUserData';
 
 import SignUpImg from '../../assets/svg/sign-up-image.svg';
 import Image from '../../components/DataDisplay/Image';
