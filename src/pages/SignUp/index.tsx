@@ -71,12 +71,10 @@ const SignUp: React.FC = () => {
 						required
 					/>
 
-					<S.ForgotPasswordLink to="/forgot-password">Forgot Password?</S.ForgotPasswordLink>
-
 					<Button type="submit">Create account</Button>
 
 					<S.HaveAccountWrapper>
-						<S.HaveAccountText>Ja tem conta ?</S.HaveAccountText>
+						<S.HaveAccountText>have an account ?</S.HaveAccountText>
 						<S.HaveAccountLink to="/sign-in">Sign In.</S.HaveAccountLink>
 					</S.HaveAccountWrapper>
 
