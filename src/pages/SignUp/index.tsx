@@ -4,6 +4,7 @@ import { FiUser, FiMail, FiLock } from 'react-icons/fi';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { ISignUpUserData } from '../../domain/pages/SignUp/interfaces/ISignUpUserData';
+import { useHistory } from 'react-router-dom';
 
 import SignUpImg from '../../assets/svg/sign-up-image.svg';
 import Image from '../../components/DataDisplay/Image';
@@ -11,11 +12,12 @@ import TextField from '../../components/Input/TextField';
 import Button from '../../components/Input/Button';
 
 import schema from '../../helpers/pages/signUp/validations/schema';
-
-import * as S from './styles';
 import api from '../../services/api';
 
+import * as S from './styles';
+
 const SignUp: React.FC = () => {
+	const history = useHistory();
 
 	const { register, handleSubmit, formState: { errors } } = useForm<ISignUpUserData>({
 		resolver: yupResolver(schema)
@@ -24,7 +26,7 @@ const SignUp: React.FC = () => {
 	const onFormSubmit = React.useCallback( async (data: ISignUpUserData) => {
 		await api.post('/users', data);
 
-		alert('create account sucessfully');
+		history.push('/sign-in');
 	}, []);
 
 	return (
@@ -74,7 +76,7 @@ const SignUp: React.FC = () => {
 					<Button type="submit">Create account</Button>
 
 					<S.HaveAccountWrapper>
-						<S.HaveAccountText>have an account ?</S.HaveAccountText>
+						<S.HaveAccountText>Already have an account ?</S.HaveAccountText>
 						<S.HaveAccountLink to="/sign-in">Sign In.</S.HaveAccountLink>
 					</S.HaveAccountWrapper>
 
