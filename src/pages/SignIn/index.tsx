@@ -17,9 +17,7 @@ import * as S from './styles';
 
 const SignIn: React.FC = () => {
 
-	const { signIn, user } = useAuth();
-
-	console.log(user);
+	const { signIn } = useAuth();
 
 	const { register, handleSubmit, formState: { errors } } = useForm<ISignInUserData>({
 		resolver: yupResolver(schema)
