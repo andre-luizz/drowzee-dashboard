@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './hooks/auth';
 
 import GlobalStyles from './styles/GlobalStyles';
 
@@ -11,7 +12,9 @@ const App: React.FC = () => {
 		<>
 			<GlobalStyles />
 			<BrowserRouter>
-				<Routes />
+				<AuthProvider>
+					<Routes />
+				</AuthProvider>
 			</BrowserRouter>
 		</>
 	);
