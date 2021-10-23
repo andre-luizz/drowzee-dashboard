@@ -1,2 +1,7 @@
+import React from 'react';
 
-export type IButton = React.ButtonHTMLAttributes<HTMLButtonElement>
+import { EButtonVariant } from '../enums/EButton';
+
+export interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    variant?: EButtonVariant;
+}
