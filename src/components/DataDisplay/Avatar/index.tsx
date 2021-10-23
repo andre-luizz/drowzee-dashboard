@@ -1,9 +1,9 @@
-import React, { ImgHTMLAttributes } from 'react';
+import React from 'react';
+
+import { IAvatar } from '../../../domain/components/interfaces/IAvatar';
 import { useAuth } from '../../../hooks/auth';
 
 import * as S from './styles';
-
-type IAvatar = ImgHTMLAttributes<any>;
 
 const Avatar: React.FC<IAvatar> = ({ src, alt }) => {
 	const { user } = useAuth();
