@@ -7,9 +7,9 @@ import { ISignUpUserData } from '../../domain/pages/SignUp/interfaces/ISignUpUse
 import { useHistory } from 'react-router-dom';
 
 import SignUpImg from '../../assets/svg/sign-up-image.svg';
-import Image from '../../components/DataDisplay/Image';
-import TextField from '../../components/Input/TextField';
-import Button from '../../components/Input/Button';
+import Image from '../../components/common/DataDisplay/Image';
+import TextField from '../../components/common/Input/TextField';
+import Button from '../../components/common/Input/Button';
 
 import schema from '../../helpers/pages/signUp/validations/schema';
 import api from '../../services/api';

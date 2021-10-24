@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
-import Heading from '../../components/DataDisplay/Heading';
-import LinkBase from '../../components/Navigation/Link';
-import Text from '../../components/DataDisplay/Text';
+import Heading from '../../components/common/DataDisplay/Heading';
+import LinkBase from '../../components/common/Navigation/Link';
+import Text from '../../components/common/DataDisplay/Text';
 
 export const Container = styled.div`
     display: flex;
