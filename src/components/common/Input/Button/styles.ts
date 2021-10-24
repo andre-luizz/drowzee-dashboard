@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
 import TextBase from '../../DataDisplay/Text';
-import colors from '../../../styles/colors';
-import gradient from '../../../styles/gradient';
+import colors from '../../../../styles/colors';
+import gradient from '../../../../styles/gradient';
 
-import { IButton } from '../../../domain/components/interfaces/IButton';
-import { EButtonVariant } from '../../../domain/components/enums/EButton';
+import { IButton } from '../../../../domain/components/interfaces/IButton';
+import { EButtonVariant } from '../../../../domain/components/enums/EButton';
 
 export const Container = styled.button<IButton>`
     display: flex;

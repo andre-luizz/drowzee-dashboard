@@ -7,9 +7,9 @@ import { ISignInUserData } from '../../domain/pages/SignIn/interfaces/ISignInUse
 import { useAuth } from '../../hooks/auth';
 
 import SignInImg from '../../assets/svg/sign-in-image.svg';
-import Image from '../../components/DataDisplay/Image';
-import TextField from '../../components/Input/TextField';
-import Button from '../../components/Input/Button';
+import Image from '../../components/common/DataDisplay/Image';
+import TextField from '../../components/common/Input/TextField';
+import Button from '../../components/common/Input/Button';
 
 import schema from '../../helpers/pages/signIn/validations/schema';
 

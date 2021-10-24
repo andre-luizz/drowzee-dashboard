@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components/macro';
 
-import colors from '../../../styles/colors';
-import fonts from '../../../styles/fonts';
+import colors from '../../../../styles/colors';
+import fonts from '../../../../styles/fonts';
 
-import { IStyleContainerProps } from '../../../domain/components/interfaces/ITextField';
+import { IStyleContainerProps } from '../../../../domain/components/interfaces/ITextField';
 
 export const Container = styled.div<IStyleContainerProps>`
     display: flex;

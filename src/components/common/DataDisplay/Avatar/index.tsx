@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { IAvatar } from '../../../domain/components/interfaces/IAvatar';
-import { useAuth } from '../../../hooks/auth';
+import { IAvatar } from '../../../../domain/components/interfaces/IAvatar';
+import { useAuth } from '../../../../hooks/auth';
 
 import * as S from './styles';
 

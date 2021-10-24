@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
-import colors from '../../../styles/colors';
-import shadows from '../../../styles/shadows';
+import colors from '../../../../styles/colors';
+import shadows from '../../../../styles/shadows';
 import Text from '../Text';
 
 export const Container = styled.div`
