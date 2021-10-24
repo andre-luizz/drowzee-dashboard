@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FiEye } from 'react-icons/fi';
-import { ITextField } from '../../../domain/components/interfaces/ITextField';
+import { ITextField } from '../../../../domain/components/interfaces/ITextField';
 
 import * as S from './styles';
 

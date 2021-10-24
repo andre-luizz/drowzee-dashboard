@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IIMage } from '../../../domain/components/interfaces/IImage';
+import { IIMage } from '../../../../domain/components/interfaces/IImage';
 
 import * as S from './styles';
 

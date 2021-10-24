@@ -1,7 +1,7 @@
 import React from 'react';
-import { EButtonVariant } from '../../../domain/components/enums/EButton';
+import { EButtonVariant } from '../../../../domain/components/enums/EButton';
 
-import { IButton } from '../../../domain/components/interfaces/IButton';
+import { IButton } from '../../../../domain/components/interfaces/IButton';
 
 import * as S from './styles';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ILink } from '../../../domain/components/interfaces/ILink';
+import { ILink } from '../../../../domain/components/interfaces/ILink';
 
 import * as S from './styles';
 
