@@ -12,13 +12,13 @@ export const Container = styled.button`
     height: 68px;
     background-color: ${colors.secondary};
     border-radius: 28px;
-    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
     border: 0;
-    transition: transform 0.2s;
+    transition: all 0.2s;
     cursor: pointer;
 
     &:hover {
         transform: translateY(-10px);
+        box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
     }
 `;
 

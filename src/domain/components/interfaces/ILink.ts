@@ -1,3 +1,6 @@
 import { LinkProps } from 'react-router-dom';
+import { IconBaseProps } from 'react-icons';
 
-export type ILink = LinkProps;
+export interface ILink extends LinkProps {
+    icon?: IconBaseProps;
+}
