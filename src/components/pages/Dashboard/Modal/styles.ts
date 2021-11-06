@@ -39,6 +39,12 @@ export const AddTaskButton = styled.button`
     border: 0;
     margin-right: 16px;
     color: ${colors.secondary};
+    cursor: pointer;
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: brightness(85%);
+    }
 `;
 
 export const ExitTaskButton = styled.button`
@@ -49,4 +55,10 @@ export const ExitTaskButton = styled.button`
     border: 1px solid ${colors.primary};
     margin-right: 16px;
     color: ${colors.primary};
+    cursor: pointer;
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: brightness(95%);
+    }
 `;

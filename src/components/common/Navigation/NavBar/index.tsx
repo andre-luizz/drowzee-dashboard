@@ -1,12 +1,13 @@
 import React from 'react';
 
+import { INavBar } from '../../../../domain/components/interfaces/INavBar';
 import { sideBarData } from '../../../../helpers/components/NavBar/sideBarData';
 
 import CreateTaskButton from '../../../pages/Dashboard/CreateTaskButton';
 
 import * as S from './styles';
 
-const NavBar: React.FC = () => {
+const NavBar: React.FC<INavBar> = ({ handleOpenModal }) => {
 	return (
 		<S.Container>
 
@@ -27,7 +28,7 @@ const NavBar: React.FC = () => {
 			</S.RoutesWrapper>
 
 			<S.NavBarFooter>
-				<CreateTaskButton />
+				<CreateTaskButton onClick={handleOpenModal} />
 			</S.NavBarFooter>
 
 		</S.Container>

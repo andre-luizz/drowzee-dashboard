@@ -2,9 +2,11 @@ import React from 'react';
 
 import * as S from './styles';
 
-const CreateTaskButton: React.FC = () => {
+type ICreateTask = React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+const CreateTaskButton: React.FC<ICreateTask> = ({ ...props }) => {
 	return (
-		<S.Container>
+		<S.Container {...props}>
 			<S.Icon />
 		</S.Container>
 	);
