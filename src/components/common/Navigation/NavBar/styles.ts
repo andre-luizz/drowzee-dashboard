@@ -35,6 +35,7 @@ export const Container = styled.nav`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
 `;
 
 export const RoutesWrapper = styled.ul`
